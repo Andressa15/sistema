@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">	
+</head>
+<body>
+	 
+	 <div>
+ 	<form method = "POST">
+ 	
+ 		Qual é o tipo de serviço? <input type="text" name="tipoDeServicio">
+		Detalhes : <input type="text" name="detalhes">
+		Dia da semana? <input type="text" name="diaDaSemana">
+		Qual é o mês que ira fazer? <input type="text" name="mes">
+		Que horas? <input type="number" name="horas">
+		Valor: <input type="number" name="valor">
+    	Nome: <input type="text" name="nome">
+		Email : <input type="text" name="email">
+        <a href="/exibir"><button type="submit">IR</button></a>
+        <a href="/exibir"><button type="submit">Volta</button></a>
+
+	</div>
+   
+</form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">	
+</head>
+<body>
+
+		<div th:each="beleza: ${salao}">
+		<p th:text="'Nome:' + ${beleza.nome}"></p>
+        <p th:text="'E-mail:' + ${beleza.email}"></p>
+        <p th:text="'Detalhes:' + ${beleza.detalhes}"></p>
+        <p th:text="'Dia da semana marcado:' + ${beleza.diaDaSemana}"></p>
+	    <p th:text="'Mês:' + ${beleza.mes}"></p>
+	    <p th:text="'Horas:' + ${beleza.hora}"></p>
+        <p th:text="'Valor:' + ${beleza.valor}"></p>
+	</div>
+</form>
+</body>
+</html>
+	
